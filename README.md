@@ -11,7 +11,7 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 
 ### Clone the app
 
-Clone the app repository using [git][git]:
+Clone the app repository using git:
 
 ```
 git clone https://github.com/deanmono/inmarApp.git
@@ -22,8 +22,8 @@ git clone https://github.com/deanmono/inmarApp.git
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
 
-* We get the tools we depend upon via `npm`, the [node package manager][npm].
-* We get the angular code via `bower`, a [client-side code package manager][bower].
+* We get the tools we depend upon via `npm`, the node package manager.
+* We get the angular code via `bower`, a client-side code package manager.
 
 We have preconfigured `npm` to automatically run `bower` so we can simply do:
 
@@ -46,13 +46,13 @@ this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+Now browse to the app at `http://localhost:8000/index.html`.
 
 
 ### Running Unit Tests
 
 The app comes preconfigured with unit tests. These are written in
-[Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
+Jasmine, which we run with the Karma Test Runner. We provide a Karma
 configuration file to run them.
 
 * the configuration is found at `karma.conf.js`
