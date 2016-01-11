@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-xs-9 heading">
+        <h2>Add New Contact</h2>
+        <p>Add a new client contact associated with this offer</p>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <form>
+            <div class="form-group">
+                <label for="contactType">Type</label>
+                <input type="text" class="form-control" id="contactType" placeholder="Type" ng-model="contact.type">
+            </div>
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Name" ng-model="contact.name">
+            </div>
+            <div class="form-group">
+                <label for="contactTitle">Title</label>
+                <input type="text" class="form-control" id="contactTitle" placeholder="Title" ng-model="contact.title">
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">Phone</label>
+                <input type="text" class="form-control" id="contactPhone" placeholder="Phone" ng-model="contact.phone">
+            </div>
+            <div class="form-group">
+                <label for="contactExt">Ext.</label>
+                <input type="text" class="form-control" id="contactExt" placeholder="Extension" ng-model="contact.ext">
+            </div>
+            <div class="form-group">
+                <label for="contactName">Fax</label>
+                <input type="text" class="form-control" id="contactFax" placeholder="Fax" ng-model="contact.fax">
+            </div>
+            <div class="form-group">
+                <label for="contactName">Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Email" ng-model="contact.email">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 text-right">
+        <button class="btn btn-primary btn-sm" type="button" ng-click="addContact(contact)">Add Contact</button>
+        <a class="btn btn-warning btn-sm" href="#/contacts">Cancel</a>
+    </div>
+</div>

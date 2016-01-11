@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-xs-9 heading">
+        <h2>External Contacts</h2>
+        <p>Select the client contact associated with this offer</p>
+    </div>
+    <div class="col-xs-2 heading pull-right">
+        <div class="text-right">
+            <button class="btn btn-sm btn-link collapser" ng-click="collapseTable=!collapseTable">
+                <i class="ico-collapse"></i>
+                <span class="pull-right" ng-hide="collapseTable">Collapse</span>
+                <span class="pull-right" ng-show="collapseTable">Expand</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-9 heading pull-left">
+        <a href="#/contacts/add" class="btn btn-default btn-sm">Add Contact</a>
+        <button class="btn btn-danger btn-sm" ng-show="contactSelected()" ng-click="contactsRemove()">Remove</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table table-radius table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Phone</th>
+                    <th>Ext.</th>
+                    <th>Fax</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody ng-hide="collapseTable">
+                <tr ng-repeat="contact in contacts" class="contact">
+                    <td><input type="checkbox" ng-model="contact.selected"></td>
+                    <td>{{ contact.type }}</td>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.title }}</td>
+                    <td>{{ contact.phone }}</td>
+                    <td>{{ contact.ext }}</td>
+                    <td>{{ contact.fax }}</td>
+                    <td>{{ contact.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

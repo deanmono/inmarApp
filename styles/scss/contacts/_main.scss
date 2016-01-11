@@ -1,0 +1,29 @@
+.heading {
+  margin: 10px;
+}
+.contact {
+  transition: .3s linear all;
+}
+.contact.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.collapser {
+  margin: 20px -40px 0 0;
+}
+.collapser span {
+  line-height: 20px;
+}
+.ico-collapse {
+  width: 20px;
+  height: 20px;
+  background: url('/assets/icon-collapse.png') no-repeat center;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px)  {
+  .collapser {
+    display: none !important;
+  }
+}
