@@ -11,7 +11,10 @@ angular.module('inmarApp.contacts').controller('ContactsCtrl', [
 
         $scope.contactSelected = function() {
             var selector = $filter("filter")( $scope.contacts , {selected:true} );
-            return selector.length;
+            if (selector) {
+                return selector.length;
+            }
+
         }
 
         $scope.contactsRemove = function() {
